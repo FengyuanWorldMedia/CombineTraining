@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Common'/>
+        <page name='01_Prepend'/>
+        <page name='02_append'/>
+        <page name='03_switchToLatest'/>
+        <page name='03_switchToLatestVoid02'/>
+        <page name='04_merge'/>
+        <page name='05_combineLatest'/>
+        <page name='06_zip'/>
+    </pages>
+</playground>

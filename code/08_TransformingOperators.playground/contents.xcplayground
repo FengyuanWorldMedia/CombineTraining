@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Common'/>
+        <page name='02_map'/>
+        <page name='03_flatMap'/>
+        <page name='04_replace'/>
+        <page name='05_scan'/>
+        <page name='01_Collect'/>
+    </pages>
+</playground>

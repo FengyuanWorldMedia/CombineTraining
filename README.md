@@ -40,13 +40,11 @@
 | 21    |     Combine系列教程-第21讲_自定义订阅者Subscribers和Subscribers.Demand |   21_CustomSubscriber.playground    |
 | 22    |     Combine系列教程-第22讲_自定义发布者Publisher和订阅Subscription-1 |   22_CustomPublisher_1.playground    |
 | 23    |     Combine系列教程-第23讲_自定义发布者Publisher和订阅Subscription-2 |   23_CustomPublisher_2.playground    |
-| 24    |     Combine系列教程-第24讲_Backpressure概念以及对应方法 |   24_backpressure.playground   |
+| 24    |     Combine系列教程-第24讲_Backpressure概念以及对应方法 |   24_Backpressure.playground   |
 | 25    |     Combine系列教程-第25讲_Combine技术点总结 |   -    |
 | 26    |     Combine系列教程-第26讲_项目实训-求职APP_设计 |   -    |
 | 27    |     Combine系列教程-第27讲_项目实训-求职APP_代码演示 |   MyJobApp    |
 
 
 ## Postman MockData
-MockForNetLayer.postman_collection.json
-
 MockForNetLayer_MyJobApp.postman_collection.json

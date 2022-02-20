@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Common'/>
+        <page name='01_Min'/>
+        <page name='02_Max'/>
+        <page name='03_First'/>
+        <page name='04_Last'/>
+        <page name='01_Min_Comparable'/>
+        <page name='05_output'/>
+        <page name='06_Contains'/>
+        <page name='07_satisfyAll'/>
+        <page name='08_reduce'/>
+    </pages>
+</playground>

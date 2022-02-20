@@ -1,0 +1,594 @@
+{
+	"info": {
+		"_postman_id": "2d246b29-3ea5-4c73-9057-4276db56432d",
+		"name": "MockForNetLayer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Myjob",
+			"item": [
+				{
+					"name": "GetJobList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/webapi/joblist/?token=token1234567890",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"webapi",
+								"joblist",
+								""
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "token1234567890"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Host",
+										"value": "127.0.0.1",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/webapi/joblist/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"webapi",
+										"joblist",
+										""
+									]
+								}
+							},
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"header\": {\n        \"result_cd\": \"OK\"\n    },\n   \n    \"body\": {\n        \"job_infos\": [\n            {\n                \"job_id\": \"job001\",\n                \"job_name\": \"java工程师\",\n                \"salary\": 15000,\n                \"company_name\": \"丰源天下\",\n                \"new_flag\": \"1\"\n            },\n            {\n                \"job_id\": \"job002\",\n                \"job_name\": \"iOS工程师\",\n                \"salary\": 20000,\n                \"company_name\": \"丰源天下\",\n                \"new_flag\": \"0\"\n            },\n            {\n                \"job_id\": \"job003\",\n                \"job_name\": \"IT讲师\",\n                \"salary\": 30000,\n                \"company_name\": \"马尔斯网络科技\",\n                \"new_flag\": \"1\"\n            },\n            {\n                \"job_id\": \"job004\",\n                \"job_name\": \"IT讲师\",\n                \"salary\": 30000,\n                \"company_name\": \"马尔斯网络科技\",\n                \"new_flag\": \"0\"\n            }\n     ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "GetJobDetails",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"header\": {\n        \"token\": \"token1234567890\"\n    },\n    \"body\":{\n        \"job_id\": \"job001\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/webapi/jobinfo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"webapi",
+								"jobinfo"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Host",
+										"value": "127.0.0.1",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/webapi/jobinfo",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"webapi",
+										"jobinfo"
+									]
+								}
+							},
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"header\": {\n        \"result_cd\": \"OK\"\n    },\n    \"body\":{ \n            \"job_id\": \"job001\",\n            \"job_name\" : \"java工程师\",\n            \"salary\": 15000,\n            \"company_name\": \"丰源天下\",\n            \"new_flag\": \"1\" ,\n            \"date_from\": \"20220101\",\n            \"date_to\": \"20230101\",\n            \"detail\": \"有5年工作经验，喜欢新技术\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "SaveJobInfo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"header\": {\n        \"token\": \"token1234567890\"\n    },\n    \"body\":{\n        \"job_id\": \"job001\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/webapi/saveJobInfo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"webapi",
+								"saveJobInfo"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url}}/webapi/saveJobInfo",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"webapi",
+										"saveJobInfo"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"header\": {\n        \"result_cd\": \"OK\"\n    } \n}"
+						}
+					]
+				},
+				{
+					"name": "AcceptJob",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"header\": {\n        \"token\": \"token1234567890\"\n    },\n    \"body\":{\n        \"job_id\": \"job003\",\n        \"my_name\": \"LiuDalin\",\n        \"mail_address\": \"mymail@qq.com\",\n        \"date\": \"20220305\",\n        \"apeal\": \"认真负责，喜欢新技术\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/order/cancel",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"order",
+								"cancel"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url}}/api/order/cancel",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"order",
+										"cancel"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"header\": {\n        \"result_cd\": \"OK\"\n    } \n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Purchase",
+			"item": [
+				{
+					"name": "GetProductInfo Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/productInfo/0001",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"productInfo",
+								"0001"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Host",
+										"value": "127.0.0.1",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/productInfo/0001",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"productInfo",
+										"0001"
+									]
+								}
+							},
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"productInfo\":[\n        {\n            \"productId\": \"ce001\",\n            \"price\" : 300\n        },\n        {\n           \"productId\": \"ce002\",\n            \"price\" : 500\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "GetProductInfo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productId\": \"ce000\",\n    \"queryCond\": \"small size\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/productInfo",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"productInfo"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Host",
+										"value": "127.0.0.1",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/productInfo",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"productInfo"
+									]
+								}
+							},
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"productInfo\":[\n        {\n            \"productId\": \"ce001\",\n            \"price\" : 300\n        },\n        {\n           \"productId\": \"ce002\",\n            \"price\" : 500\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Purchase",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"productIds\": [\n        \"id1\", \"id2\"\n    ],\n    \"cost\": 800\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/purchase",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"purchase"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url}}/api/purchase",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"purchase"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"resultCd\": \"00\",\n    \"orderId\" : \"orderId0001\"\n}"
+						}
+					]
+				},
+				{
+					"name": "CancelOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"orderId\": [\n        \"orderId0001\"\n    ],\n    \"reason\": \"service is not good\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/order/cancel",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"order",
+								"cancel"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url}}/api/order/cancel",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"order",
+										"cancel"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"resultCd\": \"00\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
