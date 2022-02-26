@@ -9,7 +9,7 @@
 | 视频平台 | 视频链接 | 
 |:-----------|:------------|
 | 网易云课堂    |     [丰源天下传媒](https://study.163.com/course/introduction/1212499809.htm?inLoc=ss_ssjg_qblb_Swift-Combine框架异步编程 "丰源天下传媒") |
-| 腾讯课堂    |     [丰源天下传媒](https://ke.qq.com/course/4031190?tuin=14527f38 "丰源天下传媒") |
+| 腾讯课堂    |     [丰源天下传媒](https://ke.qq.com/course/4457534 "丰源天下传媒") |
 | 抖音    |     [丰源天下传媒](https://student-api.iyincaishijiao.com/t/dWNtL5k/ "丰源天下传媒") |
 | 微信公众号    |     [暂时未开通](暂时未开通 "暂时未开通") |
  
