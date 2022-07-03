@@ -12,7 +12,7 @@
 | 腾讯课堂    |     [丰源天下传媒](https://ke.qq.com/course/4457534 "丰源天下传媒") |
 | 抖音    |     [丰源天下传媒](https://student-api.iyincaishijiao.com/t/dWNtL5k/ "丰源天下传媒") |
 | 微信公众号    |     [暂时未开通](暂时未开通 "暂时未开通") |
- 
+| B站    |     [丰源天下传媒](https://space.bilibili.com/1311776362 "暂时未开通") |
 
 # 
 | No | 视频标题 | 代码 |
